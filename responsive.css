@@ -1,0 +1,48 @@
+
+@media screen and (max-width: 300px) {
+.logo div {
+  font-size: 5vw;
+}
+}
+@media screen and (max-width: 500px) {
+.textoPresentacion div {
+  font-size: 15vw;
+}
+#tecnologia .img-tech {
+  flex-direction: column;
+}
+#clientes .experencia {
+  flex-direction: column;
+
+}
+#clientes .contenedor-flex {
+  justify-content: center;
+}
+.img-tech div {
+  display: block;
+}
+}
+@media screen and (max-width: 768px) {
+  #slideShow video{
+    width: auto;
+  }
+#acerca-de-mi img:first-child {
+  margin-bottom: 20px;
+}
+  .contenido-contacto div:first-child {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-item {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+   .navbar-nav .nav-item {
+    font-size: 16px;
+  }
+  .logo div {
+  font-size: 32px;
+}
+}
