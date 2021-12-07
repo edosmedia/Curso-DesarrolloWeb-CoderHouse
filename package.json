@@ -1,0 +1,24 @@
+{
+  "name": "desarrollo_web",
+  "version": "1.0.0",
+  "description": "Curso de Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edosmedia/curso.git"
+  },
+  "keywords": [
+    "curso",
+    "desarrollo",
+    "web"
+  ],
+  "author": "Eduardo Medrano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edosmedia/curso/issues"
+  },
+  "homepage": "https://github.com/edosmedia/curso#readme"
+}
