@@ -1,0 +1,117 @@
+/*  */
+#acerca-de-mi {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+#acerca-de-mi p {
+  text-align: justify;
+  padding-left: 20px;
+}
+
+
+.cliente__contenedor--flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+.cliente__logo--cliente {
+  width: 180px;
+  margin: 12px;
+
+  /* float: left;
+  padding: 5px; */
+}
+
+.experencia__contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.experiencia__modulo-atributos {
+  /* float: left; */
+  text-align: center;
+  /* width: 33.33%; */
+  margin: 40px 0;
+}
+#tecnologia {
+  margin: 20px 0;
+  clear: both;
+}
+#tecnologia .img-tech {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.img-tech img {
+  width: 70px;
+}
+.img-tech div:hover {
+  transform: scale(1.2);
+}
+.img-tech div {
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+.img-tech div p {
+  padding: 20px 0;
+}
+
+#portafolio {
+  clear: both;
+  margin: 20px 0;
+  h2 {
+    clear: both;
+    margin: 40px 0;
+  }
+  .portafolio__menu--portafolio {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .portafolio__opcion-menu-portafolio {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 15px;
+    transition: all 1s ease-in-out;
+  }
+  .portafolio__opcion-menu-portafolio:hover {
+    background: $color2;
+    color: $color1;
+    cursor: pointer;
+  }
+  .vitrina__contenedor--mostrador {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    gap: 5px;
+    overflow: hidden;
+    .vitrina__imagen--portafolio {
+      position: relative;
+      overflow: hidden;
+      clear: both;
+      width: 100%;
+      height: 100%;
+    
+      img {
+        width: 100%;
+      }
+      img::before {
+        background-color: $color3;
+      }
+    
+      h4 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        text-align: center;
+      }
+    }
+  }
+}

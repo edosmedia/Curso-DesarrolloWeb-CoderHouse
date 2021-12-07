@@ -1,0 +1,43 @@
+
+/* SlideShow */
+#slideShow {
+  position: relative;
+  top: 0;
+}
+#slideShow video {
+  width: 100%;
+}
+#slideShow video::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.slideShow__barra--degradado {
+  bottom: 6px;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.textos {
+  width: 80%;
+  margin: auto;
+}
+.textoPresentacion {
+  position: absolute;
+  top: 35%;
+  color: white;
+  margin: auto;
+}
+.textoPresentacion div {
+  font-size: 7vw;
+  width: 50%;
+  font-weight: 500;
+  line-height: 1;
+  z-index: 10;
+}
+
+/* END SlideShow */

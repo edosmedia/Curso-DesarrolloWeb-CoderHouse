@@ -46,3 +46,12 @@
   font-size: 32px;
 }
 }
+
+@media screen and (max-width: 768px) {
+  #acerca-de-mi {
+    flex-direction: column;
+  }
+  #acerca-de-mi p {
+    padding: 0;
+  }
+}

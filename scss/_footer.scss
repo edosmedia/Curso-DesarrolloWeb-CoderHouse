@@ -1,0 +1,87 @@
+footer {
+  /* clear: both;
+  overflow: hidden;
+  margin-top: 20px; */
+  height: 100%;
+}
+
+footer .bloque1-footer {
+  margin-top: 50px;
+  overflow: hidden;
+  background: linear-gradient(276deg, $color3, $color_complementario1);
+  background-size: 400% 400%;
+  -webkit-animation: degradado-footer 9s ease infinite;
+  -moz-animation: degradado-footer 9s ease infinite;
+  -o-animation: degradado-footer 9s ease infinite;
+  animation: degradado-footer 9s ease infinite;
+}
+@-webkit-keyframes degradado-footer {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes degradado-footer {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-o-keyframes degradado-footer {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes degradado-footer {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+
+footer .bloque1-footer div {
+  height: 100%;
+  padding: 10px;
+}
+
+.bloque1-footer .logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* line-height: 200px; */
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.bloque2-footer {
+  background-color: $color4;
+}
+
+.bloque2-footer p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.importante {
+  background-color: purple;
+}
