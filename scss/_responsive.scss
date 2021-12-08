@@ -24,7 +24,12 @@
 }
 @media screen and (max-width: 768px) {
   #slideShow video{
-    width: auto;
+    width: 100%;
+    object-fit: cover;
+    height: 1000px;
+  }
+  .experencia__contenedor, .cliente__contenedor--flex {
+    display: block;
   }
 #acerca-de-mi img:first-child {
   margin-bottom: 20px;
