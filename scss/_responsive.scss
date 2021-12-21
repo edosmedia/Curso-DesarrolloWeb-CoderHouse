@@ -30,7 +30,21 @@
   }
   .experencia__contenedor, .cliente__contenedor--flex {
     display: block;
+    text-align: center;
   }
+
+  .cliente__logo--cliente {
+  width: 100%;
+  margin: 12px;
+}
+
+#portafolio .portafolio__opcion-menu-portafolio {
+  display: block;
+}
+
+#portafolio .vitrina__contenedor--mostrador {
+  grid-template-columns: 1fr;
+}
 #acerca-de-mi img:first-child {
   margin-bottom: 20px;
 }

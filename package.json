@@ -23,6 +23,7 @@
   "homepage": "https://github.com/edosmedia/curso#readme",
   "dependencies": {
     "node-sass": "^7.0.0",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "slick-carousel": "^1.8.1"
   }
 }
