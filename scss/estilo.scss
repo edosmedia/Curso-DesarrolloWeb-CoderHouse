@@ -20,6 +20,17 @@ $color_complementario1: #ec00f9;
 @import 'responsive';
 
 
+body::-webkit-scrollbar {
+    background-color: $color3;
+    width: 10px
+}
+body::-webkit-scrollbar-thumb {
+    background-color: $color4;
+    border-radius: 5px;
+    width: 10px;
+    
+}
+
 @if $color1== #000{
     $color2: #fff;
 }@else if $color1== #fff{
