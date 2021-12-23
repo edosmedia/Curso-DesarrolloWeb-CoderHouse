@@ -8,6 +8,7 @@
   <meta name="theme-color" content="#5c1e85">
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
   <meta name="description" content="Eduardo Medrano Profesional en Desarrollo Web y Multimedia con mas 5 años experiencia en campo">
   <meta name="keywords" content="freelancer, tienda online, pagina web, profesional, multimedia, diseño web">
   <title>Eduardo Medrano - Web Designer and Developer Multimedia</title>
@@ -53,7 +54,6 @@
   <!-- END Cabecera -->
 
   <!-- Cuerpo de la pagina -->
-
   <!-- END Seccion Slideshow  -->
   <section id="slideShow">
     <!-- <img src="" alt=""> -->
@@ -100,13 +100,15 @@
 
     <section id="cliente">
       <h2>Clientes</h2>
-      <div class="cliente__contenedor--flex">
-        <div class="cliente__logo--cliente"><img src="https://loremflickr.com/200/200/logo" alt=""></div>
-        <div class="cliente__logo--cliente"><img src="https://loremflickr.com/200/200/logo" alt=""></div>
-        <div class="cliente__logo--cliente"><img src="https://loremflickr.com/200/200/logo" alt=""></div>
-        <div class="cliente__logo--cliente"><img src="https://loremflickr.com/200/200/logo" alt=""></div>
-       
-        
+      <div class="cliente__contenedor--flex carousel-mov">
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-1.svg" alt=""></div>
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-2.svg" alt=""></div>
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-3.svg" alt=""></div>
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-4.svg" alt=""></div>
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-5.svg" alt=""></div>
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-6.svg" alt=""></div>
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-7.svg" alt=""></div>
+        <div class="cliente__logo--cliente"><img src="/images/clientes/logoipsum-logo-8.svg" alt=""></div>
       </div>
 
 
@@ -311,40 +313,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
   <!--END Bootstrap -->
   <!-- Personalizado -->
-  
+
   <script>
-    $(".slider").slick({
 
-        // normal options...
-        infinite: false,
-
-        // the magic
-        responsive: [{
-
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            infinite: true
-          }
-
-        }, {
-
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            dots: true
-          }
-
-        }, {
-
-          breakpoint: 300,
-          settings: "unslick" // destroys slick
-
-        }]
-      });
     const Subir = document.querySelector("#flechaup");
 
     document.addEventListener('scroll', (e) => {
@@ -355,6 +328,50 @@
       }
     })
   </script>
+      <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $('.carousel-mov').slick({
+             dots: false,
+              infinite: true,
+              speed: 300,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+              ]
+                });
+              });
+        </script>
 </body>
 
 </html>
